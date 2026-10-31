@@ -1,22 +1,22 @@
 # 🎬 Video Downloader
 
-Python aur [yt-dlp](https://github.com/yt-dlp/yt-dlp) par bana hua aik simple video downloader. Sirf link paste karein aur video (ya sirf audio) apne device par download karein.
+A simple video downloader built with Python and [yt-dlp](https://github.com/yt-dlp/yt-dlp). Just paste a link and download the video (or only the audio) to your device.
 
 ## ✨ Features
 
-- YouTube aur yt-dlp ki support wali hazaron sites se download
-- Video quality select karne ka option (best, 1080p, 720p, 480p, ...)
-- Sirf audio (MP3 / M4A) download karne ka option
+- Download from YouTube and thousands of other sites supported by yt-dlp
+- Option to select video quality (best, 1080p, 720p, 480p, ...)
+- Option to download audio only (MP3 / M4A)
 - Playlist download support
-- Download progress dikhata hai
-- Windows, Linux, macOS aur Android (Termux) par chalta hai
+- Shows download progress
+- Works on Windows, Linux, macOS, and Android (Termux)
 
 ## 📋 Requirements
 
-- Python 3.9 ya us se naya
+- Python 3.9 or newer
 - yt-dlp
-- FFmpeg (video + audio merge karne aur MP3 conversion ke liye)
-- Node.js ya Deno (kuch sites ke liye yt-dlp ko JS runtime chahiye hota hai)
+- FFmpeg (for merging video + audio and for MP3 conversion)
+- Node.js or Deno (some sites require yt-dlp to have a JS runtime)
 
 ## 🚀 Installation
 
@@ -28,7 +28,7 @@ cd <repo-name>
 pip install -U yt-dlp
 ```
 
-FFmpeg install karein:
+Install FFmpeg:
 
 ```bash
 # Windows (winget)
@@ -58,13 +58,13 @@ termux-setup-storage
 python main.py
 ```
 
-Phir program ke kehne par video ka link paste karein aur quality / format choose karein.
+Then paste the video link when the program prompts you, and choose the quality / format.
 
-> Note: `main.py` ki jagah apni main script ka naam likhein.
+> Note: Replace `main.py` with the name of your own main script.
 
-## 🔄 yt-dlp Update Karna
+## 🔄 Updating yt-dlp
 
-Sites aksar apna system change karti rehti hain, is liye agar download fail ho to sab se pehle yt-dlp update karein:
+Websites frequently change their systems, so if a download fails, the first thing to do is update yt-dlp:
 
 ```bash
 pip install -U yt-dlp
@@ -82,14 +82,14 @@ pip install -U yt-dlp
 ## 🗺️ Roadmap
 
 - [ ] Android APK version
-- [ ] App ke andar se yt-dlp update ka button
-- [ ] Node.js / Deno runtime support ke saath integration
+- [ ] In-app button to update yt-dlp
+- [ ] Integration with Node.js / Deno runtime support
 - [ ] Download history
 
 ## ⚠️ Disclaimer
 
-Ye tool sirf personal aur educational use ke liye hai. Sirf wohi content download karein jis ka aap ko haq ho ya jis ki ijazat ho. Copyright aur websites ki Terms of Service ki zimmedari user par hai.
+This tool is intended for personal and educational use only. Only download content that you own or have permission to download. Responsibility for copyright and website Terms of Service lies with the user.
 
 ## 🤝 Contributing
 
-Issues aur pull requests ka khair-maqdam hai. Koi bug mile ya idea ho to issue open karein.
+Issues and pull requests are welcome. If you find a bug or have an idea, please open an issue.
